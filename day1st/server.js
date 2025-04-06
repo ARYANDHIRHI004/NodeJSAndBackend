@@ -5,17 +5,17 @@ const server = http.createServer(function(req, res){
         switch(req.method){
             case 'GET':6
                 {
-                    if(req.url ==='/') return res.end('homepade')
+                    if(req.url ==='/') return res.end('homepage')
                     if(req.url ==='/about') return res.end('about')
                     if(req.url ==='/contact-us') return res.end('about-us')
                 }
             case 'POST':
                 {
-                    if(req.url ==='/') return res.end('homepade')
+                    if(req.url ==='/') return res.end('homepage')
                     if(req.url ==='/about') return res.end('about')
                     if(req.url ==='/contact-us') return res.end('about-us')
                 }
-        }
+            }
         
         res.end('ye lo response')
         
